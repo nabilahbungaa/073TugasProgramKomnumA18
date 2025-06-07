@@ -1,0 +1,8 @@
+### 📁 Penjelasan Kode Program ###
+
+```
+import numpy as np
+from sympy import Rational, factorial, simplify
+```
+Pustaka ```numpy``` digunakan untuk manipulasi array numerik.
+Pustaka ```sympy``` digunakan untuk perhitungan simbolik seperti faktorial dan rasionalisasi jika dibutuhkan. Namun dalam kode ini hanya factorial dan simplify yang digunakan.
