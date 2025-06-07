@@ -6,3 +6,30 @@ from sympy import Rational, factorial, simplify
 ```
 Pustaka ```numpy``` digunakan untuk manipulasi array numerik.
 Pustaka ```sympy``` digunakan untuk perhitungan simbolik seperti faktorial dan rasionalisasi jika dibutuhkan. Namun dalam kode ini hanya factorial dan simplify yang digunakan.
+
+#### Fungsi compute_diff_table(y_vals) ####
+Membentuk dan menghitung tabel selisih hingga berdasarkan nilai-nilai fungsi (y) dari data tabel yang diberikan, sampai ke orde tertentu (maksimal sampai ∆⁴ dalam soal ini).
+
+```
+def compute_diff_table(y_vals):
+```
+```y_vals``` → List atau array satu dimensi yang berisi nilai-nilai fungsi f(x) dari tabel (misal: [634575, 1673874, ...]).
+
+#### Proses dalam Fungsi ####
+
+##### 1. Menentukan panjang data #####
+```
+n = len(y_vals)
+```
+Menyimpan jumlah data (banyaknya titik) dalam variabel n.
+
+##### 2. Membuat tabel kosong untuk selisih #####
+```
+diff = np.zeros((n, n))
+```
+Membuat matriks diff berukuran n x n dengan semua elemen nol. Tabel ini akan menyimpan hasil perhitungan ∆, ∆², ∆³, dst.
+
+####3 3. Mengisi kolom pertama dengan nilai fungsi asli: #####
+
+
+
